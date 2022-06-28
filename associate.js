@@ -53,7 +53,9 @@ const ticketInfo = {
 
 INSTRUCTIONS:
  Return a string that says:
+
 'General Admission for a child is $20.00'
+
 */
 
 function findPrice(tickets, info) {}

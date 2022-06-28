@@ -53,25 +53,25 @@ const dinosaurs = [
 
 const rooms = [
   {
-    roomId: 'zwfsfPU5u', // 1
+    roomId: 'zwfsfPU5u',
     name: 'Entrance Room',
     requiredTicketPermissions: [],
     dinosaurs: ['iOVNUcv-ww', 'BFjjLjea-O']
   },
   {
-    roomId: 'A6QaYdyKra', // 2
+    roomId: 'A6QaYdyKra',
     name: 'Ticket Center',
     requiredTicketPermissions: [],
     dinosaurs: ['GGvO1X9Zeh']
   },
   {
-    roomId: 'aIA6tevTne', // 3
+    roomId: 'aIA6tevTne',
     name: 'Coat Check Room',
     requiredTicketPermissions: [],
     dinosaurs: []
   },
   {
-    roomId: 'dpQnu5wgaN', // 4
+    roomId: 'dpQnu5wgaN',
     name: 'Ellis Family Hall',
     requiredTicketPermissions: [],
     dinosaurs: [
@@ -81,7 +81,7 @@ const rooms = [
     ]
   },
   {
-    roomId: 'L72moIRcrX', // 5
+    roomId: 'L72moIRcrX',
     name: 'Kit Hopkins Education Wing',
     requiredTicketPermissions: ['education'],
     dinosaurs: ['U9vuZmgKwUr', 'BFjjLjea-O']

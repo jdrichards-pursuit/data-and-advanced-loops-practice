@@ -1,22 +1,3 @@
-/** 
-Log every value in the array.
-
-Should log:
-
-one
-two
-three
-a
-b
-c
-Carson
-Mathers
-gotcha
-1
-2
-3
-*/
-
 let values = [
   ['one', 'two', 'three'],
   ['a', 'b', 'c'],

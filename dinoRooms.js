@@ -1,3 +1,4 @@
+// DINOSAUR DATA:
 const dinosaurs = [
   {
     dinosaurId: 'YLtkN9R37',
@@ -51,6 +52,7 @@ const dinosaurs = [
   }
 ];
 
+//ROOMS DATA:
 const rooms = [
   {
     roomId: 'zwfsfPU5u',
@@ -75,9 +77,9 @@ const rooms = [
     name: 'Ellis Family Hall',
     requiredTicketPermissions: [],
     dinosaurs: [
-      'YLtkN9R37', // Apatosaurus
-      'BFjjLjea-O', // Zephyrosaurus
-      'iOVNUcv-ww' // Vulcanodon
+      'YLtkN9R37', // Allosaurus
+      'BFjjLjea-O', // Brachiosaurus
+      'iOVNUcv-ww' // Compsognathus
     ]
   },
   {
@@ -90,20 +92,42 @@ const rooms = [
 
 module.exports = rooms;
 
-/* List all dinosaurs associated with the room represented by the parameter id
+/* Return a string of all dinosaurs associated with the room 
+   represented by the parameter `id` in the 
+   associateDinosaur function.
 
-   FOR EXAMPLE, If the roomId was 'L72moIRcrX' the output should be:
+   FOR EXAMPLE, 
+   If the roomId was 'L72moIRcrX',
+   the output should be:
 
    Dinosaurs associated with the Kit Hopkins Education Wing:
    ----------------------------------------------------------
    Xenoceratops - (alien horned face)
    Brachiosaurus - (arm lizard)
+
+   The string should be returned exactly as displayed above.
 */
 
 /* For information on creating a new line in JavaScript using \n, reference:
    https://sebhastian.com/new-line-javascript/
  */
 
+/**
+ *
+ * @param {Object[]} dinoRooms
+ * @param {Object[]} dinos
+ * @param {string} id
+ * @returns {string} Returns a dynamic string based on the 
+ * example output below
+ * 
+ * EXAMPLE OUTPUT:
+ 
+    Dinosaurs associated with the Kit Hopkins Education Wing:
+    ----------------------------------------------------------
+    Xenoceratops - (alien horned face)
+    Brachiosaurus - (arm lizard)
+
+ */
 function associateDinosaur(dinoRooms, dinos, id) {}
 
 console.log(associateDinosaur(rooms, dinosaurs, 'L72moIRcrX'));

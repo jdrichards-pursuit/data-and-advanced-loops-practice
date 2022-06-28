@@ -1,5 +1,7 @@
-//Log every item in object
+//INSTRUCTION: Log every item in object
+
 /**
+ * OUTPUT SHOULD BE:
  Carol
  Woods
  red

@@ -12,4 +12,11 @@ node <name of file>.js
 
 ```
 
+e.g.
+
+```js
+node array.js
+
+```
+
 Good Luck!

@@ -1,4 +1,4 @@
-let values = [
+const values = [
   ['one', 'two', 'three'],
   ['a', 'b', 'c'],
   { firstName: 'Carson', lastName: 'Mathers' },

@@ -1,5 +1,6 @@
 /** 
-Log every value in the array
+Log every value in the array.
+
 Should log:
 
 one
@@ -16,7 +17,7 @@ gotcha
 3
 */
 
-let array = [
+let values = [
   ['one', 'two', 'three'],
   ['a', 'b', 'c'],
   { firstName: 'Carson', lastName: 'Mathers' },
@@ -24,6 +25,30 @@ let array = [
   [1, 2, 3]
 ];
 
-function logIt(arr) {}
+/**
+ * logIt()
+ * -----------
+ * Given the above array,values, 
+ * Independently log every value in the array
 
-logIt(array);
+   OUTPUT:
+
+   one
+   two
+   three
+   a
+   b
+   c
+   Carson
+   Mathers
+   gotcha
+   1
+   2
+   3
+
+ * @param {*} array 
+ */
+
+function logIt(array) {}
+
+logIt(values);

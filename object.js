@@ -23,6 +23,25 @@ const user = {
   }
 };
 
+/**
+ *
+ * listPerson()
+ * -------------
+ * //INSTRUCTION: Log every item in object
+ * OUTPUT SHOULD BE:
+   Carol
+   Woods
+   red
+   blue
+   green
+   223 Constitution Rd
+   Bochum
+   33944-3394
+ */
+ * @param {object} person
+ *
+ */
+
 function listPerson(person) {}
 
 listPerson(user);

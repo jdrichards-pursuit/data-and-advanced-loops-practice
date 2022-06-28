@@ -1,3 +1,4 @@
+//DATA USED as argument FOR info parameter
 const ticketTypes = {
   general: {
     description: 'General Admission',
@@ -43,21 +44,22 @@ const ticketTypes = {
   }
 };
 
-//Given this object that will be used for the info argument when the function is called,
+//DATA USED as argument FOR tickets parameter
 const ticketInfo = {
   ticketType: 'general',
   entrantType: 'child'
 };
 
-/*  along with the ticketTypes object, above, which will be used as the tickets argument when the function is called...
+/**
+ * findPrice()
+ * ----------------
+ * Return a string that says:
+   'General Admission for a child is $20.00'
 
-INSTRUCTIONS:
- Return a string that says:
-
-'General Admission for a child is $20.00'
-
-*/
-
+ * @param {object} tickets 
+ * @param {object} info 
+ * @return {string}
+ */
 function findPrice(tickets, info) {}
 
 console.log(findPrice(ticketTypes, ticketInfo));

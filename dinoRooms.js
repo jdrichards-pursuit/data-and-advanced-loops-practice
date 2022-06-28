@@ -92,13 +92,7 @@ const rooms = [
 
 module.exports = rooms;
 
-/* Return a string of all dinosaurs associated with the room 
-   represented by the parameter `id` in the 
-   associateDinosaur function.
-
-   FOR EXAMPLE, 
-   If the roomId was 'L72moIRcrX',
-   the output should be:
+/* 
 
    Dinosaurs associated with the Kit Hopkins Education Wing:
    ----------------------------------------------------------
@@ -113,21 +107,30 @@ module.exports = rooms;
  */
 
 /**
- *
- * @param {Object[]} dinoRooms
- * @param {Object[]} dinos
- * @param {string} id
- * @returns {string} Returns a dynamic string based on the 
- * example output below
+ * associateDinosaur()
+ * -------------------
  * 
- * EXAMPLE OUTPUT:
+ * Return a string of all dinosaurs associated with the room 
+ * represented by the parameter `id` in the 
+ * associateDinosaur function.
+
+   FOR EXAMPLE, 
+   If the roomId was 'L72moIRcrX',
+   the output should be:
+
+   EXAMPLE OUTPUT:
  
     Dinosaurs associated with the Kit Hopkins Education Wing:
     ----------------------------------------------------------
     Xenoceratops - (alien horned face)
     Brachiosaurus - (arm lizard)
 
+ * @param {Object[]} dinoRooms
+ * @param {Object[]} dinos
+ * @param {string} id
+ * @returns {string} Returns a dynamic string
  */
+
 function associateDinosaur(dinoRooms, dinos, id) {}
 
 console.log(associateDinosaur(rooms, dinosaurs, 'L72moIRcrX'));

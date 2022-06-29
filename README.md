@@ -1,4 +1,4 @@
-# Array, Object, and Advanced Loop Practice
+# Accessing Data and Advanced Loop Practice
 
 The functions in the four files have a problem to solve using the given data. There are no tests. So solve each problem based on the given instructions, the output shown and the data. Make sure to study the data before attempting to solve the problem.
 

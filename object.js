@@ -27,7 +27,7 @@ const user = {
    Bochum
    33944-3394
  
- * @param {object} person
+ * @param {Object} person
  */
 
 function listPerson(person) {}

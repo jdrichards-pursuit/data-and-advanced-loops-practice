@@ -27,7 +27,7 @@ const values = [
    2
    3
 
- * @param {*} array 
+ * @param {Array} array 
  */
 
 function logIt(array) {}

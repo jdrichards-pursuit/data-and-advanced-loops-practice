@@ -59,8 +59,8 @@ const ticketInfo = {
  * Your solution should work for any ticketInfo object containing
  * the same two keys even if they have different values.
 
- * @param {object} tickets 
- * @param {object} info 
+ * @param {Object} tickets 
+ * @param {Object} info 
  * @return {string}
  */
 function findPrice(tickets, info) {}

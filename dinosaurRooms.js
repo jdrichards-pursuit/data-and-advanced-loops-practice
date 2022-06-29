@@ -90,10 +90,6 @@ const rooms = [
   }
 ];
 
-/* For information on creating a new line in JavaScript using \n, reference:
-   https://sebhastian.com/new-line-javascript/
- */
-
 /**
  * associateDinosaur()
  * -------------------

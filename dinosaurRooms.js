@@ -90,18 +90,6 @@ const rooms = [
   }
 ];
 
-module.exports = rooms;
-
-/* 
-
-   Dinosaurs associated with the Kit Hopkins Education Wing:
-   ----------------------------------------------------------
-   Xenoceratops - (alien horned face)
-   Brachiosaurus - (arm lizard)
-
-   The string should be returned exactly as displayed above.
-*/
-
 /* For information on creating a new line in JavaScript using \n, reference:
    https://sebhastian.com/new-line-javascript/
  */
@@ -114,8 +102,7 @@ module.exports = rooms;
  * represented by the parameter `id` in the 
  * associateDinosaur function.
 
-   FOR EXAMPLE, 
-   If the roomId was 'L72moIRcrX',
+   FOR EXAMPLE if the roomId argument input was 'L72moIRcrX',
    the output should be:
 
    EXAMPLE OUTPUT:
@@ -124,6 +111,9 @@ module.exports = rooms;
     ----------------------------------------------------------
     Xenoceratops - (alien horned face)
     Brachiosaurus - (arm lizard)
+
+    For information on creating a new line in JavaScript using \n, reference:
+    https://sebhastian.com/new-line-javascript/
 
  * @param {Object[]} dinoRooms
  * @param {Object[]} dinos

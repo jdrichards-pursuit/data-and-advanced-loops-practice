@@ -53,8 +53,11 @@ const ticketInfo = {
 /**
  * findPrice()
  * ----------------
- * Return a string that says:
+ * Basedon the above ticket Info object,
+ * Dynamically return a string that says:
    'General Admission for a child is $20.00'
+ * Your solution should work for any ticketInfo object with the same
+ * two keys even if they have different values.
 
  * @param {object} tickets 
  * @param {object} info 

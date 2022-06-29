@@ -9,8 +9,8 @@ const values = [
 /**
  * logIt()
  * -----------
- * Given the above array,values, 
- * Independently log every value in the array
+ * Given an array of values
+ * dynamically log each value in the array
 
    OUTPUT:
 

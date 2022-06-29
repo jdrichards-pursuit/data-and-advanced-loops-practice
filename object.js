@@ -27,7 +27,8 @@ const user = {
  *
  * listPerson()
  * -------------
- * Independently log every item in object
+ * Independently log every item in an object. Make sure your solution
+ * is dynamic and does not just serve the given object.
  * 
  * OUTPUT SHOULD BE:
    Carol

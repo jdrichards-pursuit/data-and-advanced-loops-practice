@@ -30,6 +30,20 @@ const values = [
  * @param {Array} array 
  */
 
-function logIt(array) {}
+function logIt(array) {
+  for(const arr of array) {
+    if(typeof arr === `string`) {
+      console.log(arr);
+    } else if (Array.isArray(arr)) {
+      for(const item of arr) {
+        console.log(item);
+      }
+    } else {
+      for(const k in arr) {
+        console.log(arr[k]);
+      }
+    }
+  }
+}
 
 logIt(values);

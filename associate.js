@@ -46,14 +46,14 @@ const ticketTypes = {
 
 //DATA USED as argument FOR tickets parameter
 const ticketInfo = {
-  ticketType: 'general',
-  entrantType: 'child'
+  ticketType: 'membership',
+  entrantType: 'senior'
 };
 
 /**
  * findPrice()
  * ----------------
- * Basedon the above ticket Info object,
+ * Based on the above ticket Info object,
  * Dynamically return a string that says:
    'General Admission for a child is $20.00'
  * Your solution should work for any ticketInfo object containing
@@ -63,6 +63,17 @@ const ticketInfo = {
  * @param {Object} info 
  * @return {string}
  */
-function findPrice(tickets, info) {}
+function findPrice(tickets, info) {
+  if(ticketInfo.ticketType === `movie` || ticketInfo.ticketType === `education` || ticketInfo.ticketType === `terrace`){
+    return `${ticketTypes[`extras`][ticketInfo.ticketType][`description`]} for a(n) ${ticketInfo.entrantType} is $${(ticketTypes[`extras`][ticketInfo.ticketType][`priceInCents`][ticketInfo.entrantType] / 100).toFixed(2)} `
+  }
+  else{
+    return `${ticketTypes[ticketInfo.ticketType][`description`]} for a(n) ${ticketInfo.entrantType} is $${(ticketTypes[ticketInfo.ticketType][`priceInCents`][ticketInfo.entrantType] / 100).toFixed(2)}`
+  }
+  
+
+
+}
 
 console.log(findPrice(ticketTypes, ticketInfo));
+

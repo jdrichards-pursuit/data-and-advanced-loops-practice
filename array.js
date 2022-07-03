@@ -1,3 +1,6 @@
+
+
+
 const values = [
   ['one', 'two', 'three'],
   ['a', 'b', 'c'],
@@ -30,6 +33,19 @@ const values = [
  * @param {Array} array 
  */
 
-function logIt(array) {}
+function logIt(array) {
+ for(let i = 0; i < array.length; i++){
+  if(typeof array[i] === `object`){
+    for(val in array[i]){
+      console.log(array[i][val])
+    }
+  }
+  else{
+    console.log(array[i])
+  }
+ 
+ }
+}
 
 logIt(values);
+

@@ -117,6 +117,23 @@ const rooms = [
  * @returns {string} Returns a dynamic string
  */
 
-function associateDinosaur(dinoRooms, dinos, id) {}
+function associateDinosaur(dinoRooms, dinos, id) {
+  let location = ``
+  let idArr = null
+  let dinoNames = ``
+  
+  for(let obj of dinoRooms){
+    if(obj[`roomId`] === id){
+      location = obj[`name`]
+      idArr = obj[`dinosaurs`]
+      for (let i = 0; i < dinos.length; i++){
+        if(idArr.includes(dinos[i][`dinosaurId`])){
+          dinoNames += `${dinos[i][`name`]} - (${dinos[i][`meaningOfName`]}) \n`
+        }
+      }
+    }
+  }
+   return `Dinosaurs associated with the ${location}:\n${dinoNames}`
+}
 
-console.log(associateDinosaur(rooms, dinosaurs, 'L72moIRcrX'));
+console.log(associateDinosaur(rooms, dinosaurs, 'dpQnu5wgaN',));

@@ -1,3 +1,6 @@
+
+
+
 const values = [
   ['one', 'two', 'three'],
   ['a', 'b', 'c'],
@@ -40,6 +43,7 @@ function logIt(array) {
   else{
     console.log(array[i])
   }
+ 
  }
 }
 

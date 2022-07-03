@@ -121,13 +121,14 @@ function associateDinosaur(dinoRooms, dinos, id) {
   let location = ``
   let idArr = null
   let dinoNames = ``
-  for(let obj of rooms){
+  
+  for(let obj of dinoRooms){
     if(obj[`roomId`] === id){
       location = obj[`name`]
       idArr = obj[`dinosaurs`]
-      for (let i= 0; i < dinosaurs.length; i++){
-        if(idArr.includes(dinosaurs[i][`dinosaurId`])){
-          dinoNames += `${dinosaurs[i][`name`]} - (${dinosaurs[i][`meaningOfName`]}) \n`
+      for (let i = 0; i < dinos.length; i++){
+        if(idArr.includes(dinos[i][`dinosaurId`])){
+          dinoNames += `${dinos[i][`name`]} - (${dinos[i][`meaningOfName`]}) \n`
         }
       }
     }
@@ -135,4 +136,4 @@ function associateDinosaur(dinoRooms, dinos, id) {
    return `Dinosaurs associated with the ${location}:\n${dinoNames}`
 }
 
-console.log(associateDinosaur(rooms, dinosaurs, 'zwfsfPU5u',));
+console.log(associateDinosaur(rooms, dinosaurs, 'dpQnu5wgaN',));

@@ -46,8 +46,8 @@ const ticketTypes = {
 
 //DATA USED as argument FOR tickets parameter
 const ticketInfo = {
-  ticketType: 'membership',
-  entrantType: 'senior'
+  ticketType: 'movie',
+  entrantType: 'adult'
 };
 
 /**
@@ -64,11 +64,11 @@ const ticketInfo = {
  * @return {string}
  */
 function findPrice(tickets, info) {
-  if(ticketInfo.ticketType === `movie` || ticketInfo.ticketType === `education` || ticketInfo.ticketType === `terrace`){
-    return `${ticketTypes[`extras`][ticketInfo.ticketType][`description`]} for a(n) ${ticketInfo.entrantType} is $${(ticketTypes[`extras`][ticketInfo.ticketType][`priceInCents`][ticketInfo.entrantType] / 100).toFixed(2)} `
+  if(info.ticketType === `movie` || info.ticketType === `education` || info.ticketType === `terrace`){
+    return `${tickets[`extras`][info.ticketType][`description`]} for a(n) ${info.entrantType} is $${(tickets[`extras`][info.ticketType][`priceInCents`][info.entrantType] / 100).toFixed(2)} `
   }
   else{
-    return `${ticketTypes[ticketInfo.ticketType][`description`]} for a(n) ${ticketInfo.entrantType} is $${(ticketTypes[ticketInfo.ticketType][`priceInCents`][ticketInfo.entrantType] / 100).toFixed(2)}`
+    return `${tickets[info.ticketType][`description`]} for a(n) ${info.entrantType} is $${(tickets[info.ticketType][`priceInCents`][info.entrantType] / 100).toFixed(2)}`
   }
   
 

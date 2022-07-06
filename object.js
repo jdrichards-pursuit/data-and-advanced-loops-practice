@@ -32,12 +32,13 @@ const user = {
 
 function listPerson(person) {
   for(const k in person) {
-    if(Array.isArray(k)) {
-      for(const i of k) {
-        console.log(i);
+    if(typeof person[k] === `string` || typeof person[k] === `number`) {
+      console.log(person[k]);
+    } else {
+      for(const i in person[k]) {
+        console.log(person[k][i]);
       }
     }
-    for(const )
   }
 }
 

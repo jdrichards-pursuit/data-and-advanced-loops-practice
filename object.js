@@ -30,6 +30,16 @@ const user = {
  * @param {Object} person
  */
 
-function listPerson(person) {}
+function listPerson(person) {
+  for(const k in person) {
+    if(typeof person[k] === `string` || typeof person[k] === `number`) {
+      console.log(person[k]);
+    } else {
+      for(const i in person[k]) {
+        console.log(person[k][i]);
+      }
+    }
+  }
+}
 
 listPerson(user);

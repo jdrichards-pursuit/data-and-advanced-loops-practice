@@ -34,10 +34,10 @@ function logIt(array) {
   for(const arr of array) {
     if(typeof arr === `string` || typeof arr === `number`) {
       console.log(arr);
-    } else if (Array.isArray(arr)) {
-      for(const item of arr) {
-        console.log(item);
-      }
+    // } else if (Array.isArray(arr)) {
+    //   for(const item of arr) {
+    //     console.log(item);
+    //   }
     } else {
       for(const k in arr) {
         console.log(arr[k]);

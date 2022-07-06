@@ -30,6 +30,15 @@ const user = {
  * @param {Object} person
  */
 
-function listPerson(person) {}
+function listPerson(person) {
+  for(const k in person) {
+    if(Array.isArray(k)) {
+      for(const i of k) {
+        console.log(i);
+      }
+    }
+    for(const )
+  }
+}
 
 listPerson(user);

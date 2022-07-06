@@ -32,7 +32,7 @@ const values = [
 
 function logIt(array) {
   for(const arr of array) {
-    if(typeof arr === `string`) {
+    if(typeof arr === `string` || typeof arr === `number`) {
       console.log(arr);
     } else if (Array.isArray(arr)) {
       for(const item of arr) {
